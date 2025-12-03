@@ -5,7 +5,7 @@ import { injectIWER } from '@iwsdk/vite-plugin-iwer';
 import { compileUIKit } from '@iwsdk/vite-plugin-uikitml';
 import { defineConfig } from 'vite';
 
-const repoName = process.env.REPO_NAME || 'dev'; // fallback for local dev
+const repoName = process.env.REPO_NAME || '.'; // fallback for local dev
 
 export default defineConfig({
   base: `/${repoName}/`,
