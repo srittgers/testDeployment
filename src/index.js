@@ -42,7 +42,7 @@ World.create(document.getElementById('scene-container'), {
     features: { handTracking: true, layers: false } 
   },
   features: { locomotion: { useWorker: true }, grabbing: true, physics: true},
-  level: '/glxf/Composition.glxf' 
+  level: 'glxf/Composition.glxf' 
 }).then((world) => {
   const { camera } = world;
   
@@ -93,7 +93,7 @@ World.create(document.getElementById('scene-container'), {
     const panelEntity = world
       .createTransformEntity()
       .addComponent(PanelUI, {
-        config: '/ui/welcome.json',
+        config: 'ui/welcome.json',
         maxHeight: 0.8,
         maxWidth: 1.6
       })
